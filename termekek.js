@@ -8,10 +8,11 @@ class Termekek {
     const SZULOELEM = $("article");
 
     for (let index = 0; index < LISTA.length; index++) {
-      const t1 = new Termek(LISTA[index], SZULOELEM);
+      const t1 = new Termek(LISTA[index], SZULOELEM, index);
     }
-    this.#buttonElem.on("click", function () {
-      this.#kedvencek.append(this.adat);
+    $(window).on("gombkattintas", (event) => {
+      this.#kedvencek.push(event.detail);
+      console.log(this.#kedvencek);
     });
   }
 }

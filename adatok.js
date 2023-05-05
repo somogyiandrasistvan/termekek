@@ -2,16 +2,19 @@ export const LISTA = [
   {
     nev: "András",
     kor: 21,
-    sport: "foci"
+    sport: "foci",
+    id: 0
   },
   {
     nev: "Marci",
     kor: 20,
-    sport: "kondi"
+    sport: "kondi",
+    id: 1
   },
   {
     nev: "Levente",
     kor: 21,
-    sport: "bicikli"
+    sport: "bicikli",
+    id: 2
   }
 ];
